@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:nfham2/youtube_veiw_screen.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class YoutubeView2 extends StatefulWidget {
+import '../../screens/materials_details_screen/youtube_view_scren.dart';
+
+class YoutubeListOfVideosScreen extends StatefulWidget {
   String url;
 
-  YoutubeView2({Key? key, required this.title, required this.url})
+  YoutubeListOfVideosScreen({Key? key, required this.title, required this.url})
       : super(key: key);
   final String title;
 
   @override
-  State<YoutubeView2> createState() => _YoutubeView2State();
+  State<YoutubeListOfVideosScreen> createState() => _YoutubeListOfVideosScreenState();
 }
 
-class _YoutubeView2State extends State<YoutubeView2> {
+class _YoutubeListOfVideosScreenState extends State<YoutubeListOfVideosScreen> {
   late YoutubePlayerController controller = YoutubePlayerController(
       initialVideoId: YoutubePlayer.convertUrlToId(widget.url)!,
       flags: const YoutubePlayerFlags(

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:nfham2/presentation/screens/materials_details_screen/material_details_screen_list_of_videos.dart';
 import 'package:nfham2/presentation/widgets/material_details_screen/material_details_screen_card.dart';
 import 'package:nfham2/presentation/widgets/material_details_screen/material_details_screen_unit_name.dart';
 import 'package:nfham2/product_model.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' as rootBundle;
-import 'package:nfham2/test2.dart';
-import 'package:nfham2/youtube.dart';
+
 
 class MaterialDetailsScreen extends StatefulWidget {
   @override
@@ -19,6 +19,15 @@ class _MaterialDetailsScreenState extends State<MaterialDetailsScreen> {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'اختر الصف',
+            style: TextStyle(
+              fontSize: 18,
+            ),
+          ),
+          elevation: 0.0,
+        ),
         body: FutureBuilder(
           future: ReadJsonData(),
           builder: (context, data) {
@@ -62,14 +71,14 @@ class _MaterialDetailsScreenState extends State<MaterialDetailsScreen> {
                                             Navigator.push(
                                               context,
                                               MaterialPageRoute(
-                                                builder: (context) => Center()
-                                                    // YoutubeView(
-                                                    //   // url: items[index]
-                                                    //   //         .lessons[index2]
-                                                    //   //     ['lessonName2'],
-                                                    //   url: "",
-                                                    //   title: '',
-                                                    // ),
+                                                builder: (context) =>
+                                                    YoutubeView(
+                                                      lessons: items[index]
+                                                          .lessons[index2]
+                                                      ['lessonName2'],
+                                                      title: items[index].lessons[index2]
+                                                      ['lessonName1'],
+                                                    ),
                                               ),
                                             );
                                           },

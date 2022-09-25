@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nfham2/dst.dart';
+import 'package:nfham2/presentation/widgets/material_details_screen/material_details_screen_list_of_vieos.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class YoutubeView extends StatefulWidget {
@@ -31,7 +32,7 @@ class _YoutubeViewState extends State<YoutubeView> {
             itemCount: widget.lessons.length,
             itemBuilder: (context, index) {
               print(widget.lessons[index]);
-              return YoutubeView2(title: widget.title, url: widget.lessons[index]);
+              return YoutubeListOfVideosScreen(title: widget.title, url: widget.lessons[index]);
             }), // This trailing comma makes auto-formatting nicer for build methods.
       ),
     );
