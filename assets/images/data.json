@@ -1,0 +1,125 @@
+[
+  {
+    "id" : 1,
+    "unitName": "الوحدة الاولى",
+    "lessons": [
+      {
+        "lessonName1": "الدرس الاول",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      },
+      {
+        "lessonName1": "الدرس الثانى",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      }
+    ]
+  },
+  {
+    "id" : 2,
+    "unitName": "الوحدة الثانية",
+    "lessons": [
+      {
+        "lessonName1": "الدرس الاول",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      },
+      {
+        "lessonName1": "الدرس الثانى",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      },
+      {
+        "lessonName1": "الدرس الثالث",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      }
+    ]
+  },
+  {
+    "id" : 3,
+    "unitName": "الوحدة الثالثة",
+    "lessons": [
+      {
+        "lessonName1": "الدرس الاول",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      },
+      {
+        "lessonName1": "الدرس الثانى",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      },
+      {
+        "lessonName1": "الدرس الثالت",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      }
+    ]
+  },
+  {
+    "id" : 4,
+    "unitName": "الوحدة الرابعة",
+    "lessons": [
+      {
+        "lessonName1": "الدرس الاول",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      },
+      {
+        "lessonName1": "الدرس الثانى",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      },
+      {
+        "lessonName1": "الدرس الثالت",
+        "lessonName2": [
+          "https://www.youtube.com/watch?v=qJkKYS5azws",
+          "https://www.youtube.com/watch?v=mOeNSYGkaTw",
+          "https://www.youtube.com/watch?v=cWi-nFql0VM",
+          "https://www.youtube.com/watch?v=7-dQ3isuv_I"
+        ]
+      }
+    ]
+  }
+]
