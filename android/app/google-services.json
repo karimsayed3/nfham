@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548258426014",
+    "project_id": "nafham-36a56",
+    "storage_bucket": "nafham-36a56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548258426014:android:2f22a5e3cfe763d9bd9f8f",
+        "android_client_info": {
+          "package_name": "com.example.nfham2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALz_kT6ETwv43z0DNr676Op3n86LA1mGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

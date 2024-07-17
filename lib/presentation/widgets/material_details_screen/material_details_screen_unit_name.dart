@@ -8,7 +8,7 @@ class MaterialDetailsScreenUnitName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       unitName,
-      style: TextStyle(
+      style: const TextStyle(
           fontSize: 20,
           color: Colors.black,
           fontWeight: FontWeight.bold

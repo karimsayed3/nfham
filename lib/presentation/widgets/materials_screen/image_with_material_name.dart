@@ -1,43 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../screens/materials_details_screen/material_details_screen.dart';
 
 class ImageWithMaterialName extends StatelessWidget {
   final String materialName;
-  const ImageWithMaterialName({Key? key, required this.materialName}) : super(key: key);
+  final String image;
+
+  const ImageWithMaterialName(
+      {Key? key, required this.materialName, required this.image})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const MaterialDetailsScreen(),));
       },
       child: Container(
-        margin: EdgeInsets.only(bottom: 10),
+        margin: EdgeInsets.only(bottom: 10.h),
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+              topRight: Radius.circular(10.r),
+              bottomRight: Radius.circular(10.r)),
           color: Colors.white,
           boxShadow: [
             BoxShadow(
               spreadRadius: 3,
               blurRadius: 2,
-              offset: Offset(2, 3),
+              offset: const Offset(2, 3),
               color: Colors.grey.shade300,
             ),
           ],
         ),
-        height: 70,
+        height: 100.h,
         child: Row(
           children: [
-            Container(
-              width: 70,
-              height: 70,
+            SizedBox(
+              width: 80.w,
+              height: 100.h,
               child: Image(
-                image: AssetImage('assets/images/work1.jpg'),
+                image: NetworkImage(image),
                 fit: BoxFit.cover,
               ),
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                height: 70,
+                padding: EdgeInsets.symmetric(horizontal: 20.w),
+                height: 100.h,
                 color: Colors.blueGrey,
                 child: Align(
                   alignment: Alignment.centerRight,
@@ -45,9 +55,8 @@ class ImageWithMaterialName extends StatelessWidget {
                     materialName,
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.w600
-                    ),
+                        fontSize: 20.sp,
+                        fontWeight: FontWeight.w600),
                   ),
                 ),
               ),

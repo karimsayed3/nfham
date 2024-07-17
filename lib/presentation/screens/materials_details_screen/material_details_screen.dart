@@ -9,6 +9,8 @@ import 'package:flutter/services.dart' as rootBundle;
 
 
 class MaterialDetailsScreen extends StatefulWidget {
+  const MaterialDetailsScreen({super.key});
+
   @override
   _MaterialDetailsScreenState createState() => _MaterialDetailsScreenState();
 }
@@ -20,8 +22,8 @@ class _MaterialDetailsScreenState extends State<MaterialDetailsScreen> {
       textDirection: TextDirection.rtl,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(
-            'اختر الصف',
+          title: const Text(
+            'اختر الدرس',
             style: TextStyle(
               fontSize: 18,
             ),
@@ -41,14 +43,14 @@ class _MaterialDetailsScreenState extends State<MaterialDetailsScreen> {
                   // itemCount: 3,
                   itemBuilder: (context, index) {
                     return Container(
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Expanded(
                             child: Container(
-                              padding: EdgeInsets.only(bottom: 8),
+                              padding: const EdgeInsets.only(bottom: 8),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,10 +59,10 @@ class _MaterialDetailsScreenState extends State<MaterialDetailsScreen> {
                                     unitName: items[index].unitName.toString(),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.only(left: 8, right: 8),
+                                    padding: const EdgeInsets.only(left: 8, right: 8),
                                     child: ListView.builder(
                                       shrinkWrap: true,
-                                      physics: ScrollPhysics(),
+                                      physics: const ScrollPhysics(),
                                       // itemCount: 3,
                                       itemCount: items[index].lessons == null
                                           ? 0
@@ -101,7 +103,7 @@ class _MaterialDetailsScreenState extends State<MaterialDetailsScreen> {
                     );
                   });
             } else {
-              return Center(
+              return const Center(
                 child: CircularProgressIndicator(),
               );
             }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DividerWithYearName extends StatelessWidget {
   final String yearName;
@@ -7,25 +8,28 @@ class DividerWithYearName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20),
+      width: MediaQuery.of(context).size.width,
+      padding: EdgeInsets.symmetric(horizontal: 10.w),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children:  [
           Container(
-            width: 80,
-            height: 2,
+            width: 100.w,
+            height: 4.h,
             color: Colors.grey,
           ),
+          SizedBox(width: 10.w,),
           Text(
               yearName,
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 18.sp,
               color: Colors.grey,
             ),
           ),
+          SizedBox(width: 10.w,),
           Container(
-            width: 80,
-            height: 2,
+            width: 100.w,
+            height: 4.h,
             color: Colors.grey,
           ),
         ],

@@ -13,11 +13,11 @@ class MaterialDetailsScreenCard extends StatelessWidget {
         elevation: 0.5,
         child: Container(
           width: double.infinity,
-          margin: EdgeInsets.symmetric(horizontal: 12,vertical: 15),
-          padding: EdgeInsets.symmetric(horizontal: 12),
+          margin: const EdgeInsets.symmetric(horizontal: 12,vertical: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Text(
             materialName,
-            style: TextStyle(
+            style: const TextStyle(
                 fontSize: 18,
                 color: Colors.blue
             ),
